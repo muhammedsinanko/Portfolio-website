@@ -38,11 +38,7 @@ class PersonalWebsiteFlutter extends StatelessWidget {
             nunitoText(
                 text: "GitHub link  :   ", size: 18, weight: FontWeight.w600),
             InkWell(
-              onTap: () {
-                Uri url = Uri.parse(
-                    "https://www.behance.net/gallery/194462863/Pizza-Hut?");
-                launchUrl(url, mode: LaunchMode.inAppWebView);
-              },
+              onTap: lauchProject,
               child: nunitoText(
                 text: "Personal website",
                 size: 18,
@@ -54,5 +50,10 @@ class PersonalWebsiteFlutter extends StatelessWidget {
         ),
       ]),
     );
+  }
+
+  lauchProject() {
+    Uri url = Uri.parse("https://github.com/muhammedsinanko/Portfolio-website");
+    launchUrl(url, mode: LaunchMode.inAppWebView);
   }
 }

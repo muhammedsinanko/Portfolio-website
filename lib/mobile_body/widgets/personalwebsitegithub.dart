@@ -55,8 +55,7 @@ class PersonalWebsiteFlutter extends StatelessWidget {
   }
 
   lauchProject() {
-    Uri url =
-        Uri.parse("https://www.behance.net/gallery/197282183/Portfolio-2024");
+    Uri url = Uri.parse("https://github.com/muhammedsinanko/Portfolio-website");
     launchUrl(url, mode: LaunchMode.inAppWebView);
   }
 }
